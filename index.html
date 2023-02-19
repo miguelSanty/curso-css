@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html
+  lang="es">
+  <head>
+    <meta
+      charset="UTF-8" 
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" 
+    />
+    <title>
+      Curso de CSS
+    </title>
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+  </head>
+
+  <body>
+    <h1>Aprendiendo CSS</h1>
+    <p>
+      <i>Cascading Style Sheets </i>
+      - Hojas de Estilo en Cascada
+    </p>
+
+    <!-- Nav -->
+    <ul>
+      <li>
+        <a
+          href="index.html#temario-css">Selectores
+          Avanzados
+        </a>
+      </li>
+      <li>
+        <a
+          href="index.html#selector-universal"
+        ></a>
+      </li>
+      <li>
+        <a href=""></a>
+      </li>
+    </ul>
+
+    <!-- Selector de hijos directos y descendientes -->
+
+    <article id="selectores-avanzados">
+      <h2>
+        Selecores Avanzados
+      </h2>
+      <h3>
+        Selecores Hijos
+      </h3>
+      <h4>
+        Selecores de hijos directos
+      </h4>
+      <ul 
+        class="hijos-directos">
+        <li>
+          <b>Primavera</b>
+        </li>
+        <li>
+          <b>Verano</b>
+        </li>
+        <li>
+          <b>Otoño</b>
+        </li>
+        <li>
+          <b>Invierno</b>
+        </li>
+      </ul>
+
+      <h4>Selecores
+        de
+        hijos
+        descendientes
+      </h4>
+      <ul
+        class="hijos-descendientes">
+        <li>
+          <b>Primavera</b>
+        </li>
+        <li>
+          <b>Verano</b>
+        </li>
+        <li>
+          <b>Otoño</b>
+        </li>
+        <li>
+          <b>Invierno</b>
+        </li>
+        <li>
+          <strong>Hola</strong>
+        </li>
+      </ul>
+      <h3>
+        Selectores Hermanos
+      </h3>
+      <h4>
+        Selector de hermano (en general)
+      </h4>
+
+      <ul>
+        <li>
+          <b>Primavera</b>
+        </li>
+        <li class="hermanos-general">
+          <b>Verano</b>
+        </li>
+        <li>
+          <b>Otoño</b>
+        </li>
+        <li>
+          <b>Invierno</b>
+        </li>
+        <li>
+        <strong>Hola</strong>
+        </li>
+      </ul>
+
+      <h4>Selector
+        de
+        hermano
+        adyacentes
+      </h4>
+      <!-- Solamente va a plicar al elemento que esta debajo de este -->
+
+      <ul>
+        <li>
+          <b>Primavera</b>
+        </li>
+        <li class="hermanos-adyacentes">
+          <b>Verano</b>
+        </li>
+        <li>
+          <b>Otoño</b>
+        </li>
+        <li>
+          <b>Invierno</b>
+        </li>
+        <li>
+          <strong>Hola</strong>
+        </li>
+      </ul>
+
+      <h3>
+        Selectores Adyacentes
+      </h3>
+      <nav
+        class="selectores-atributo">
+        <ul>
+          <li>
+            <a href="https://jonmircha.com">Inicio</a>
+          </li>
+          <li>
+            <a 
+              href="https://jonmircha.com/cursos"
+              class="menu-item cursos btn-danger"
+              target="_blank"
+            >
+            Cursos
+          </a>
+          </li>
+          <li>
+            <a
+              href="https://jonmircha.com/blog"
+              target="_blank"
+            >
+            Blog
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://jonmircha.com/cv"
+              target="_blank">
+              CV
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jonmircha.com/ahora"
+              target="_blank">
+              Ahora
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://jonmircha.com/notas"
+              target="_blank">
+              Notas
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <h3>Selector Universal</h3>
+      
+      <a
+        href="index.html#temario-css">
+        👆
+      </a>
+
+    </article>
+    <hr />
+  </body>
+</html>

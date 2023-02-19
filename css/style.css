@@ -1,0 +1,83 @@
+/* ! Selecores Hijos */
+.hijos-directos > li {
+  background-color: pink;
+}
+
+.hijos-descendientes strong {
+  background-color: black;
+  border: thistle solid;
+  color: pink;
+}
+
+/* 
+  ! Selecores Hermanos
+  Los selectores de hermanos van a aplicar a los elementos que son hermanos y que esten por defecto del elemento de
+*/
+.hermanos-general ~ li {
+  background-color: black;
+  text-align: center;
+  color: blueviolet;
+  border: solid 1px blueviolet;
+}
+
+/* 
+  ! Selecores Hermanos Adyacentes
+  Solamente va aplicar al elemento que esta debajo de este
+*/
+.hermanos-adyacentes + li {
+  background-color: black;
+  text-align: center;
+  color: yellowgreen;
+  border: yellowgreen solid;
+}
+
+/* 
+  ! Selectores Atributos
+  Volvemos aplicar el espacio en blanco sumado con <etiqueta html>[atributo]
+*/
+.selectores-atributo a[href] {
+  text-decoration: none;
+  color: purple;
+}
+
+.selectores-atributo a[target="_blank"] {
+  font-weight: bold;
+  color: pink;
+}
+
+/* *: Este comodin aplica el estilo si contiene la palabra en cuentión */
+.selectores-atributo a[href*="jonmircha"] {
+  font-size: 24px;
+}
+
+/* ^: El estilo se va aplicar siempre y cundo empienzen con la palabra o el termino que se quiera aplicar */
+.selectores-atributo a[href^="http:"] {
+  background-color: black;
+}
+
+/* $: Este comodin aplica el estilo si al final contiene la palabra en cuentión */
+.selectores-atributo a[href$=".com"] {
+  color: rebeccapurple;
+}
+
+/* ~: Este comodin aplica el estilo si contiene el texto en cuestión en una lista separada por espacios */
+.selectores-atributo a[class~="cursos"] {
+  background-color: midnightblue;
+}
+
+/* |: Este comodin aplica el estilo si contiene el texto en cuestión en una lista separada por espacios y que despues del texto en cuestión puede venir un guión medio */
+.selectores-atributo a[class~="btn-danger"] {
+  color: red;
+}
+
+/* 
+  ! Selector Universal
+*/
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.selector-universal * {
+  font-size: 24px;
+}
